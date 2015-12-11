@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!-- customize the color palette -->
+        <item name="android:colorPrimary">@color/myPrimary</item>
+        <item name="android:colorPrimaryDark">@color/myPrimaryDark</item>
+        <item name="android:colorAccent">@color/myAccent</item>
+
+    </style>
+
+
+
+    <style name="NoActionBar" parent="android:Theme.Holo.Light.NoActionBar"/>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:textColor">@color/TextColorDark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="translucent">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!-- PagerSlidingTabStrip的自定义样式 -->
+    <style name="pagerTabStype">
+        <item name="pstsShouldExpand">true</item>
+        <item name="pstsDividerColor">#00000000</item>
+        <item name="pstsUnderlineHeight">1dp</item>
+        <item name="pstsUnderlineColor">@color/myPrimaryDark</item>
+        <item name="pstsIndicatorHeight">6dp</item>
+        <item name="pstsIndicatorColor">@color/white</item>
+
+    </style>
+</resources>

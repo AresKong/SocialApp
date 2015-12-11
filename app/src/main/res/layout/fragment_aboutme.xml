@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/aboutme_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/titlebar"
+        android:orientation="horizontal"
+        android:elevation="2dp"
+        android:onClick="userInfo">
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/login"/>
+        <TextView
+            android:id="@+id/userInfoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:text="游客"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/titlebar"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:onClick="setting">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="22dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="22sp"
+            android:text="个人信息"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroud">
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/testMessage"
+                style="@style/TextStyle"
+                android:textSize="22sp"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/test"
+                android:layout_marginStart="8dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button"
+                android:onClick="send"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

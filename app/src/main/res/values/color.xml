@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#f8f8f8</color>
+    <color name="backgroud">#E0E0E0</color>
+    <color name="deepGray">#BDBDBD</color>
+    <color name="TextColorDark">#f8353434</color>
+    <color name="TextColor_hint">#A3B1CA</color>
+    <color name="chat_base_color_text_black">#3e3e39</color>
+    <color name="common_blue">#2c97e8</color>
+    <color name="common_gray">#898989</color>
+
+    <color name="divider_line_color">#afafaf</color>
+
+    <color name="login_activity_bg">#efefef</color>
+
+    <color name="borderColor">#747474</color>
+
+    <color name="window_background">#CC000000</color>
+
+
+    <color name="myPrimary">#00BCD4</color>
+    <color name="myPrimaryDark">#0097A7</color>
+    <color name="myPrimaryLight">#4DD0E1</color>
+    <color name="myAccent">#18FFFF</color>
+    <color name="myDivider">#B6B6B6</color>
+
+    <color name="translucent_background">#80000000</color>
+</resources>

@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!-- customize the color palette -->
+        <item name="android:colorPrimary">@color/myPrimary</item>
+        <item name="android:colorPrimaryDark">@color/myPrimaryDark</item>
+        <item name="android:colorAccent">@color/myAccent</item>
+
+        <item name="android:actionOverflowMenuStyle">@style/myMunuStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/myOverflowButton</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+
+
+    </style>
+    <style name="myMunuStyle" parent="@android:style/Widget.Holo.PopupMenu">
+        <item name="android:popupBackground">@color/myPrimary</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="myOverflowButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_add_white_24dp</item>
+    </style>
+
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+    </style>
+
+
+
+
+    <style name="NoActionBar" parent="android:Theme.Holo.Light.NoActionBar"/>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:textColor">@color/TextColorDark</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="translucent">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!-- PagerSlidingTabStrip的自定义样式 -->
+    <style name="pagerTabStype">
+        <item name="pstsShouldExpand">true</item>
+        <item name="pstsDividerColor">@color/white</item>
+        <item name="pstsDividerPadding">0dp</item>
+        <item name="pstsUnderlineHeight">0dp</item>
+        <item name="pstsUnderlineColor">@color/myPrimary</item>
+        <item name="pstsIndicatorHeight">2dp</item>
+        <item name="pstsIndicatorColor">@color/myPrimaryLight</item>
+
+    </style>
+
+    <style name="My">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="My.ImageView">
+        <item name="android:contentDescription">@string/app_name</item>
+    </style>
+
+    <style name="My.TextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="My.TextView._Black">
+        <item name="android:textColor">@color/chat_base_color_text_black</item>
+    </style>
+
+    <style name="My.ImageView.Photo_Avatar">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+</resources>

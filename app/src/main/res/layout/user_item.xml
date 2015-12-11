@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/img"
+        style="@style/My.ImageView.Photo_Avatar"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/loogoo" />
+
+    <TextView
+        android:id="@+id/contactName"
+        style="@style/My.TextView._Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10.0dip"
+        android:layout_toEndOf="@id/img"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Name"
+        android:textColor="@drawable/recent_name_text_color_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zju.callmemaybe" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.zju.callmemaybe.model.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/launch"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.zju.callmemaybe.activities.Login"
+            android:label="@string/app_name"
+            android:theme="@style/NoActionBar" >
+
+        </activity>
+
+        <activity android:name="com.zju.callmemaybe.activities.Main"
+            android:label="@string/title_activity_main" >
+        </activity>
+
+        <activity android:name="com.zju.callmemaybe.activities.SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName="com.zju.callmemaybe.activities.Login" >
+        </activity>
+
+        <activity android:name="com.zju.callmemaybe.activities.CreateRoom"
+            android:label="@string/title_activity_room"
+            android:parentActivityName="com.zju.callmemaybe.activities.CreateRoom" >
+        </activity>
+
+        <activity android:name="com.zju.callmemaybe.activities.SingleChat"
+            android:label="@string/title_activity_single_chat">
+        </activity>
+
+        <!--<activity android:name="com.zju.callmemaybe.activities.Room"-->
+            <!--android:label="@string/title_activity_room">-->
+        <!--</activity>-->
+
+        <activity android:name="com.zju.callmemaybe.activities.AddFriend"
+            android:label="@string/title_activity_add_friend"
+            android:theme="@style/translucent">
+        </activity>
+
+        <activity android:name=".custom.ContactsList"/>
+
+        <activity android:name="com.zju.callmemaybe.activities.Launch"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.avos.avoscloud.PushService"
+            android:exported="true" />
+
+        <receiver android:name="com.zju.callmemaybe.service.NotificationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.zju.socialapp.client_notification" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
